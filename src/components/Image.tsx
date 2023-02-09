@@ -8,7 +8,6 @@ export default function Image(item: IImage) {
     <ImageListItem sx={{ padding: "0.2em"}}>
       <img
         src={item.src}
-        srcSet={item.src}
         alt={item.filename}
         loading="lazy"
       />
