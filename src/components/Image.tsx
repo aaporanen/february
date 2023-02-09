@@ -5,7 +5,7 @@ import IImage from '../models/IImage';
 
 export default function Image(item: IImage) {
   return (
-    <ImageListItem sx={{ width: "300px", height: "300px", padding: "1em" }}>
+    <ImageListItem sx={{ padding: "0.2em"}}>
       <img
         src={item.src}
         srcSet={item.src}

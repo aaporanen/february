@@ -17,7 +17,7 @@ export default function Content() {
   const { data: images } = useQuery('images', getImages);
 
   return (
-    <ImageList sx={{ margin: 0 }}>
+    <ImageList sx={{ margin: 0 }} cols={6}>
       {!!images && images.map(img => <Image 
         key={img.id}
         id={img.id}
